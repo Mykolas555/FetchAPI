@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <title>Fetch</title>
+    </head>
+    <body>
+         <!-- filmu paieska -->
+        <section>
+            <h2>Filmo paieska</h2>
+            <form>
+                <div class="formgroup">
+                    <input type="text" class="form-control m-5" placeholder="ivesk filmo pavadinima">
+                </div>
+                <div class="formgroup">
+                    <button type="submit" class="btn btn-primary m-3">ieskoti</button>
+                </div>
+            </form>
+        </section>
+        <main>
+            <div class="alert alert-danger" style="display:none"></div>
+            <table class="table  table-dark">
+                <thead>
+                    <tr>
+                        <th>Pavadinimas</th>
+                        <th>Trukme</th>
+                        <th>Rezisierius</th>
+                        <th>Metai</th>
+                        <th>IMDB reitingas</th>
+                        <th>Kita</th>
+                        <th>Posteris</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="title"></td>
+                        <td class="time"></td>
+                        <td class="director"></td>
+                        <td class="year"></td>
+                        <td class="imdb"></td>
+                        <td class="other"></td>
+                        <td class="image"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <!--
+                sukurti su js datalist, kuriame butu visos lietuvos vietoves
+                duomenys yra cia: https://api.meteo.lt/v1/places
+            -->
+        <section class="placess">
+            <h2>Citatos</h2>
+            <input list="quotes" class="form-control m-5" placeholder="iveskite citata">
+            <datalist id="quotes">
+                
+            </datalist>
+        </section>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
